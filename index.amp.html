@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <link rel="canonical" href="/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A little more about Tim Nguyen.">
@@ -409,6 +410,77 @@
       position: absolute;
       right: 16px;
       top: 16px; }
+    .contactbox{
+        position: relative;
+        top: 75px;
+        width: 250px;
+        height: 250px:
+      }
+      .email {
+        box-shadow: inset 4px 4px 2px #cecfd2,
+                    inset -4px -4px 2px #ffffff;
+        border-radius: 10px;
+        background-color: #F2F3F7;
+        border-color: #F2F3F7;
+        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 80vw;
+        height: 25px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        outline: none;
+        text-align: center;
+        font-size: 15px;
+      }
+      .spacer {
+        position: relative;
+        height: 20px;
+        width: 250px:
+      }
+      .message {
+        box-shadow: inset 4px 4px 2px #cecfd2,
+                    inset -4px -4px 2px #ffffff;
+        border-radius: 10px;
+        background-color: #F2F3F7;
+        border-color: #F2F3F7;
+        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 80vw;
+        height: 50px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        outline: none;
+        text-align: center;
+        font-size: 15px;
+      }
+      .submit {
+        box-shadow:  4px 4px 2px #cecfd2,
+                     -4px -4px 2px #ffffff;
+        border-radius: 10px;
+        background-color: #F2F3F7;
+        border-color: #F2F3F7;
+        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 40vw;
+        height: 25px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        outline: none;
+        text-align: center;
+        font-size: 15px;
+      }
     </style>
   </head>
   <body>
@@ -500,6 +572,29 @@ Project Intraweb provides software for schools, businesses, and communities to p
   <li>Have more fun (as if he hadn't have enough fun during lunch)</li>
   <li>Update this blog quaterly🤞</li>
 </ul>
+</div>
+</div>
+<div class="demo-card-wide7 mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text"><b>Contact Tim</b></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <form
+      action-xhr="https://formspree.io/mjvoppvq"
+      method="POST"
+    >
+      <label >
+        <input class="email" type="text" name="_replyto" placeholder="Your Email">
+      </label>
+      <div class="spacer">
+      </div>
+      <label>
+        <textarea class="message" name="message" placeholder="Your message"></textarea>
+      </label>
+      <div class="spacer">
+      </div>
+      <button class="submit" type="submit">Send</button>
+    </form>
 </div>
 </div>
 <div class="demo-card-wide90 mdl-card mdl-shadow--2dp">
