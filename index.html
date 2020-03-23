@@ -246,7 +246,7 @@
       position: relative;
       top: 10%;
       margin: 0 auto;
-      height: 200px;
+      height: 450px;
       width: 250px;
       border-radius: 30px;
       background: #F2F3F7;
@@ -255,6 +255,16 @@
     }
     .bar {
       position: relative;
+      height: 10px;
+      width: 200px;
+      border-radius: 50px;
+      margin: 0 auto;
+      box-shadow: inset 4px 4px 2px #cecfd2,
+                  inset -4px -4px 2px #ffffff;
+    }
+    .bar2 {
+      position: relative;
+      top: 50px;
       height: 10px;
       width: 200px;
       border-radius: 50px;
@@ -396,6 +406,78 @@
       position: absolute;
       right: 16px;
       top: 16px; }
+    .contactbox{
+      position: relative;
+      top: 75px;
+      width: 250px;
+      height: 250px:
+    }
+    .email {
+      box-shadow: inset 4px 4px 2px #cecfd2,
+                  inset -4px -4px 2px #ffffff;
+      border-radius: 10px;
+      background-color: #F2F3F7;
+      border-color: #F2F3F7;
+      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 200px;
+      height: 25px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      outline: none;
+      text-align: center;
+      font-size: 15px;
+    }
+    .spacer {
+      position: relative;
+      height: 20px;
+      width: 250px:
+    }
+    .message {
+      box-shadow: inset 4px 4px 2px #cecfd2,
+                  inset -4px -4px 2px #ffffff;
+      border-radius: 10px;
+      background-color: #F2F3F7;
+      border-color: #F2F3F7;
+      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 200px;
+      height: 50px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      outline: none;
+      text-align: center;
+      font-size: 15px;
+      line-height: 50px;
+    }
+    .submit {
+      box-shadow:  4px 4px 2px #cecfd2,
+                   -4px -4px 2px #ffffff;
+      border-radius: 10px;
+      background-color: #F2F3F7;
+      border-color: #F2F3F7;
+      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 100px;
+      height: 25px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      outline: none;
+      text-align: center;
+      font-size: 15px;
+    }
     </style>
   </head>
   <body>
@@ -415,6 +497,27 @@
   <div class="twitter">
   </div>
   </a>
+  </div>
+  <div class="bar2">
+  </div>
+  <div class="contactbox">
+    <h1>Contact Tim</h1>
+  <form
+    action="https://formspree.io/mjvoppvq"
+    method="POST"
+  >
+    <label >
+      <input class="email" type="text" name="_replyto" placeholder="Your Email">
+    </label>
+    <div class="spacer">
+    </div>
+    <label>
+      <textarea class="message" name="message" placeholder="Your message"></textarea>
+    </label>
+    <div class="spacer">
+    </div>
+    <button class="submit" type="submit">Send</button>
+  </form>
   </div>
 </div>
 </div>
