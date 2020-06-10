@@ -23,7 +23,7 @@
     <meta name="twitter:description" content=" Tim Nguyen's personal site.">
     <meta name="twitter:image" content=" https://www.thisistimnguyen.com/profile.png">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="amphtml" href="/index.amp.html">
+    <link rel="canonical" href="index.html">
     <meta name="author" content="Tim Nguyen">
     <meta name="description" content="This is Tim Nguyen. A nerd and a programmer. Tim Nguyen also worked on SmartDisplayPi and also is currently working on Project Intraweb.">
     <meta name="keywords" content="Tim Nguyen,Blog,Raspberry Pi">
@@ -31,476 +31,345 @@
     <title>Tim Nguyen</title>
     <meta name="google-site-verification" content="3oiaCn57oUwItbPL48en11_oHCnCFeQB7mQDeeJCV9Y" />
     <style>
-    html, body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #F2F3F7;
-    }
-    .demo-card-widex.mdl-card {
-      position: relative;
-      top: 50px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      opacity: 0;
-    }
-    .demo-card-wide.mdl-card {
-      position: relative;
-      top: 100px;
-      border-radius: 4px;
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      border-radius: 25px;
-      background: #1B9DE2;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide1.mdl-card {
-      position: relative;
-      top: 150px;
-      max-width: 1000px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      background: #F2F3F7;
-      border-radius: 25px;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide2.mdl-card {
-      position: relative;
-      top: 200px;
-      max-width: 1000px;
-      bottom: 20px;
-      border-radius: 4px;
-      background: #F2F3F7;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      border-radius: 25px;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide3.mdl-card {
-      position: relative;
-      top: 250px;
-      max-width: 1000px;
-      bottom: 20px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      border-radius: 25px;
-      background: #1B9DE2;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide4.mdl-card {
-      position: relative;
-      top: 300px;
-      max-width: 1000px;
-      bottom: 20px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      background: #F2F3F7;
-      display: flex;
-      border-radius: 25px;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide5.mdl-card {
-      position: relative;
-      top: 350px;
-      max-width: 1000px;
-      bottom: 20px;
-      border-radius: 4px;
-      background: #F2F3F7;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      border-radius: 25px;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide6.mdl-card {
-      position: relative;
-      top: 400px;
-      max-width: 1000px;
-      bottom: 20px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      background: #F2F3F7;
-      display: flex;
-      border-radius: 25px;
-      box-shadow:
-      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
-    .demo-card-wide90.mdl-card {
-      position: relative;
-      top: 400px;
-      bottom: 20px;
-      border-radius: 4px;
-      width: 90%;
-      margin: auto;
-      display: flex;
-      border-radius: 25px;
-      opacity: 0;
-    }
-    .demo-card-wide1 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide2 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide3 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide4 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide5 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide6 > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      background: #1B9DE2;
-    }
-    .demo-card-wide > .mdl-card__title {
-      color: #fff;
-      height: 135px;
-      display: flex;
-      font-weight: bold;
-      background: #1B9DE2;
-    }
-    .demo-card-wide > .mdl-card__menu {
-      color: #fff;
-    }
-    #box{
-      opacity: 1.0;
-      height: 20%;
-      width: 100%;
-      bottom: 0px;
-    }
-    a {
-      text-decoration: none;
-      color:inherit;
-    }
-    .boxa {
-      position: fixed;
-      height: 100%;
-      width: 50%;
-      top: 0px;
-      left: 0;
-    }
-    .boxb {
-      position: absolute;
-      height: 100%;
-      width: 50%;
-      top: 0px;
-      right: 0;
-    }
-    .profile {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      position: relative;
-      top: 5%;
-      margin: 0 auto;
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      background: url('profile.png') center / cover;
-      box-shadow:  24px 24px 48px #babbbe,
-                   -24px -24px 48px #ffffff;
-    }
-    .profilebox {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      position: relative;
-      top: 10%;
-      margin: 0 auto;
-      height: 450px;
-      width: 250px;
-      border-radius: 30px;
-      background: #F2F3F7;
-      box-shadow:  24px 24px 48px #babbbe,
-                   -24px -24px 48px #ffffff;
-    }
-    .bar {
-      position: relative;
-      height: 10px;
-      width: 200px;
-      border-radius: 50px;
-      margin: 0 auto;
-      box-shadow: inset 4px 4px 2px #cecfd2,
-                  inset -4px -4px 2px #ffffff;
-    }
-    .bar2 {
-      position: relative;
-      top: 50px;
-      height: 10px;
-      width: 200px;
-      border-radius: 50px;
-      margin: 0 auto;
-      box-shadow: inset 4px 4px 2px #cecfd2,
-                  inset -4px -4px 2px #ffffff;
-    }
-    .social{
-      width: 150px;
-      height: 50px;
-      position: relative;
-      margin: 0 auto;
-      top: 20px;
-    }
-    .github {
-      width: 50px;
-      height: 50px;
-      float: left;
-      display: inline-block;
-      border-radius: 50%;
-      background: #F2F3F7;
-      box-shadow:  5px 5px 10px #cecfd2,
-                   -5px -5px 10px #ffffff;
-      background: url('github.png') center / cover;
-    }
-    .twitter {
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-      float: right;
-      border-radius: 50%;
-      background: #F2F3F7;
-      box-shadow:  5px 5px 10px #cecfd2,
-                   -5px -5px 10px #ffffff;
-      background: url('twitter.png') center / cover;
-    }
-    h1 {
-      font-size: 27.5px;
-      text-align: center;
-      letter-spacing: 3px;
-    }
-    .mdl-card {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      font-size: 16px;
-      font-weight: 400;
-      min-height: 200px;
-      overflow: hidden;
-      width: 330px;
-      z-index: 1;
-      position: relative;
-      background: rgb(255,255,255);
-      border-radius: 2px;
-      box-sizing: border-box; }
+  html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: var(--bg-color);
+  }
 
-    .mdl-card__media {
-      background-color: rgb(255,64,129);
-      background-repeat: repeat;
-      background-position: 50% 50%;
-      background-size: cover;
-      background-origin: padding-box;
-      background-attachment: scroll;
-      box-sizing: border-box; }
-
-    .mdl-card__title {
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: rgb(0,0,0);
-      display: block;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: stretch;
-          -ms-flex-pack: stretch;
-              justify-content: stretch;
-      line-height: normal;
-      padding: 16px 16px;
-      -webkit-perspective-origin: 165px 56px;
-              perspective-origin: 165px 56px;
-      -webkit-transform-origin: 165px 56px;
-              transform-origin: 165px 56px;
-      box-sizing: border-box; }
-      .mdl-card__title.mdl-card--border {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-    .mdl-card__title-text {
-      -webkit-align-self: flex-end;
-          -ms-flex-item-align: end;
-              align-self: flex-end;
-      color: inherit;
-      display: block;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: normal;
-      overflow: hidden;
-      -webkit-transform-origin: 149px 48px;
-              transform-origin: 149px 48px;
-      margin: 0; }
-
-    .mdl-card__subtitle-text {
-      font-size: 14px;
-      color: rgba(0,0,0, 0.54);
-      margin: 0; }
-
-    .mdl-card__supporting-text {
-      color: rgba(0,0,0, 0.54);
-      font-size: 1rem;
-      line-height: 18px;
-      overflow: hidden;
-      padding: 16px 16px;
-      width: 90%; }
-      .mdl-card__supporting-text.mdl-card--border {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-    .mdl-card__actions {
-      font-size: 16px;
-      line-height: normal;
-      width: 100%;
-      background-color: transparent;
-      padding: 8px;
-      box-sizing: border-box; }
-      .mdl-card__actions.mdl-card--border {
-        border-top: 1px solid rgba(0, 0, 0, 0.1); }
-
-    .mdl-card--expand {
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1; }
-
-    .mdl-card__menu {
-      position: absolute;
-      right: 16px;
-      top: 16px; }
-    .contactbox{
-      position: relative;
-      top: 75px;
-      width: 250px;
-      height: 250px:
-    }
-    .email {
-      box-shadow: inset 4px 4px 2px #cecfd2,
-                  inset -4px -4px 2px #ffffff;
-      border-radius: 10px;
-      background-color: #F2F3F7;
-      border-color: #F2F3F7;
-      margin: 0 auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      width: 200px;
-      height: 25px;
-      border-top-style: hidden;
-      border-right-style: hidden;
-      border-left-style: hidden;
-      border-bottom-style: hidden;
-      outline: none;
-      text-align: center;
-      font-size: 15px;
-    }
-    .spacer {
-      position: relative;
-      height: 20px;
-      width: 250px:
-    }
-    .message {
-      box-shadow: inset 4px 4px 2px #cecfd2,
-                  inset -4px -4px 2px #ffffff;
-      border-radius: 10px;
-      background-color: #F2F3F7;
-      border-color: #F2F3F7;
-      margin: 0 auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      width: 200px;
-      height: 50px;
-      border-top-style: hidden;
-      border-right-style: hidden;
-      border-left-style: hidden;
-      border-bottom-style: hidden;
-      outline: none;
-      text-align: center;
-      font-size: 15px;
-    }
-    .submit {
-      box-shadow:  4px 4px 2px #cecfd2,
-                   -4px -4px 2px #ffffff;
-      border-radius: 10px;
-      background-color: #F2F3F7;
-      border-color: #F2F3F7;
-      margin: 0 auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      width: 100px;
-      height: 25px;
-      border-top-style: hidden;
-      border-right-style: hidden;
-      border-left-style: hidden;
-      border-bottom-style: hidden;
-      outline: none;
-      text-align: center;
-      font-size: 15px;
-    }
-    </style>
+  :root {
+--primary-color: #0099ff;
+--font-color: black;
+--bg-color: #F2F3F7;
+--shadow-color1: #cecfd2;
+--shadow-color2: #ffffff;
+--gimage: url(github.png);
+}
+@media (prefers-color-scheme: dark) {
+:root{
+  --primary-color: #0099ff;
+  --font-color: white;
+  --bg-color: #1c1c1c;
+  --shadow-color1: #0b0b0b;
+  --shadow-color2: #2d2d2d;
+  --gimage: url(gitdark.png);
+}
+}
+  .cont{
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  }
+  h1 {
+    position: relative;
+    color: white;
+    margin: 0;
+    display: inline-block;
+    font-size: 35px;
+    padding-left: 10px;
+    padding-top: 50px;
+    font-weight: 900px;
+  }
+  h3 {
+    position: relative;
+    color: var(--font-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  a {
+    text-decoration: none;
+    color:inherit;
+  }
+  .card {
+    height: auto;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    background: var(--bg-color);
+    box-shadow:  25px 25px 49px var(--shadow-color1),
+         -25px -25px 49px var(--shadow-color2);
+  }
+  .cont {
+    height: 100%;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes scroll {
+    from { bottom: -150px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+  }
+  @keyframes scroll {
+    from{ bottom: -250px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+  }
+  h2 {
+    position: relative;
+    margin: 0;
+    font-size: 35px;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-weight: 900px;
+    color: var(--font-color);
+  }
+  p {
+    margin-left: 25px;
+    margin-right: 7.5px;
+    margin-bottom: 20px;
+    color: var(--font-color);
+  }
+  li {
+    color: var(--font-color);
+    margin-left: 10px;
+  }
+  .card:hover{
+    box-shadow:  40px 40px 79px var(--shadow-color1),
+         -40px -40px 79px var(--shadow-color2);
+  }
+  .github:hover{
+    box-shadow:  20px 20px 40px var(--shadow-color1),
+         -20px -20px 79px var(--shadow-color2);
+  }
+  .twitter:hover{
+    box-shadow:  20px 20px 40px var(--shadow-color1),
+         -20px -20px 79px var(--shadow-color2);
+  }
+  .card1:hover{
+    box-shadow:  40px 40px 79px var(--shadow-color1),
+         -40px -40px 79px var(--shadow-color2);
+  }
+  .email {
+    box-shadow: inset 4px 4px 2px var(--shadow-color1),
+                inset -4px -4px 2px var(--shadow-color2);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 75%;
+    height: 25px;
+    color: var(--font-color);
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+  }
+  .spacer {
+    position: relative;
+    height: 20px;
+    width: 250px:
+  }
+  .message {
+    box-shadow: inset 4px 4px 2px var(--shadow-color1),
+                inset -4px -4px 2px var(--shadow-color2);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 75%;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+  }
+  .submit {
+    box-shadow:  4px 4px 2px var(--shadow-color1),
+                 -4px -4px 2px var(--shadow-color2);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    border-color: var(--bg-color);
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 75%;
+    height: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+  }
+  .social{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+  }
+  .github {
+    width: 50px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    margin-bottom: 150px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow:  10px 10px 20px var(--shadow-color1),
+         -10px -10px 20px var(--shadow-color2);
+    background: var(--gimage) center / cover;
+  }
+  .twitter {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+    margin-bottom: 150px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    box-shadow:  10px 10px 20px var(--shadow-color1),
+         -10px -10px 20px var(--shadow-color2);
+    background: url('twitter.png') center / cover;
+  }
+</style>
   </head>
   <body>
-<div class="boxa">
-  <div class="profile">
+    <div class="cont">
+      <h1 style="margin-top: 75px; margin-bottom: 25px;">This is Tim Nguyen.</h1>
+     <div style="display: flex; align-items: center;">
+    <div class="divider"></div><h3>An Intro  </h3>
   </div>
-<div class="profilebox">
-  <h1><b>Tim Nguyen</b></h1>
-  <div class="bar">
+  <div class="card">
+    <h2>Hi There!</h2>
+    <p>This is Tim Nguyen. You may notice that a lot of sites are linked under this domain. Those are some of the projects taht he has worked on with or without someone.</p>
+    <pre> </pre>
   </div>
-  <div class="social">
+  <div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>About Tim</h3>
+</div>
+<div class="card">
+<h2>Who is Tim?</h2>
+<p>Here is a shortlist of what he is.</p>
+<ul>
+  <li>He is an <em>avgeek.</em></li>
+  <li>He is a <em>nerd.</em></li>
+  <li>He is an <em>eight-grader.</em></li>
+  <li>He is a <em>programmer.</em></li>
+  <li>He is an <em>Android</em> diehard.</li>
+  <li>He is a <em>Google</em> diehard.</li>
+  <li>He is a <em>Dua Lipa</em> and <em>Coldplay</em> fan.</li>
+</ul>
+<pre> </pre>
+</div>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Experiences</h3>
+</div>
+<div class="card">
+<h2>What has he worked on?</h2>
+<p>Here is a shortlist of what he has worked on before.</p>
+<ul>
+<li>HTML5/CSS</li>
+<li>Javascript</li>
+<li>PHP</li>
+<li>Firebase (Hosting, Firestore, Storage, Authentication)</li>
+<li>Google Assistant / Actions on Google</li>
+<li>Raspberry Pi and Arudino</li>
+<li>Android ROM Modifications</li>
+<li>Diagflow</li>
+<li>Blender</li>
+<li>AR</li>
+</ul>
+<pre> </pre>
+</div>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Projects</h3>
+</div>
+<a class="card" href="https://github.com/piflyer/SmartDisplayPi">
+<h2>SmartDisplayPi</h2>
+<p>Turn your Raspberry Pi to a Smart Display with visual cards for weather, traffic, and your calendar. Plus, Home Assistant and Google Assistant are built in, making this the ultimate smart home device.</p>
+<pre> </pre>
+</a>
+<a class="card" href="https://project-intraweb.github.io/">
+<h2>Project Intraweb</h2>
+<p>Project Intraweb provides software for schools, businesses, and communities to provide offline content, or a working Intraweb. All of this is powered by a Raspberry Pi.</p>
+<pre> </pre>
+</a>
+<a class="card" href="https://seaward.thisistimnguyen.com/">
+<h2>Project Seaward</h2>
+<p>Project Seaward aims to visualize the effects of climate change through storytelling and Augmented Reality (AR). Project Seaward also helps inform and find solutions towards our climate change crisis.</p>
+<pre> </pre>
+</a>
+<a class="card" href="https://rights.thisistimnguyen.com/">
+<h2>Know Your Rights</h2>
+<p>Know Your Rights aims to inform people about their rights in certain situations. Available as a webiste, chabot, and a Google Assistant skill, you can access Know Your Rights anytime and anywhere. You can even share your experinces through the website and also view it offline though the website.</p>
+<pre> </pre>
+</a>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Currently Working On</h3>
+</div>
+<div class="card">
+<h2>What is Tim working on?</h2>
+<p>He is currently working and developing a UI framework that works both on mobile and desktop devices.</p>
+<pre> </pre>
+</div>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Goals and Dreams</h3>
+</div>
+<div class="card">
+<h2>Goals and Dreams</h2>
+<ul>
+  <li>Be a better programmer</li>
+  <li>Learn Flutter</li>
+  <li>Fly on United's Island Hopping</li>
+  <li>Fly on the world's longest flight</li>
+  <li>Be a better sailor and photographer</li>
+</ul>
+<pre> </pre>
+</div>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Contact</h3>
+</div>
+<div class="card">
+<h2>Contact Tim</h2>
+<form
+  action-xhr="https://formsubmit.co/54b7e8e60dc2097bead7fb59abde319c"
+  method="POST"
+>
+  <label >
+    <input class="email" type="text" name="email" placeholder="Your Email">
+  </label>
+  <div class="spacer">
+  </div>
+  <label>
+    <textarea class="message" name="message" placeholder="Your message"></textarea>
+  </label>
+  <div class="spacer">
+  </div>
+  <button class="submit" type="submit">Send</button>
+</form>
+<pre> </pre>
+</div>
+<div class="card">
+  <h2>Social Media</h2>
+  <div class="social" style="padding-bottom:50px;">
   <a href="https://github.com/piflyer">
   <div class="github">
   </div>
@@ -510,105 +379,7 @@
   </div>
   </a>
   </div>
-  <div class="bar2">
-  </div>
-  <div class="contactbox">
-    <h1>Contact Tim</h1>
-  <form
-    action="https://formsubmit.co/54b7e8e60dc2097bead7fb59abde319c"
-    method="POST"
-  >
-    <label >
-      <input class="email" type="text" name="email" placeholder="Your Email">
-    </label>
-    <div class="spacer">
+</div>
     </div>
-    <label>
-      <textarea class="message" name="message" placeholder="Your message"></textarea>
-    </label>
-    <div class="spacer">
-    </div>
-    <button class="submit" type="submit">Send</button>
-  </form>
-  </div>
-</div>
-</div>
-<div class="boxb">
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>This is Tim Nguyen.</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-  </div>
-  <div class="mdl-card__menu">
-  </div>
-</div>
-<div class="demo-card-wide1 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>Who is Tim Nguyen?</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-<ul>
-  <li>An <b>avgeek</b></li>
-  <li>A <b>nerd</b></li>
-  <li>A <b>student</b></li>
-  <li>A <b>programmer</b></li>
-  <li>An <b>Android</b> fan</li>
-  <li><b>Coldplay</b> and <b>Dua Lipa</b> fan</li>
-</ul>
-  </div>
-</div>
-<div class="demo-card-wide2 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>What is he doing right now?</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-Improving and working on a <em>secret project</em>🤔. Also building a paper airplane because why not.
-  </div>
-</div>
-<div class="demo-card-wide3 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>What are some projects that he worked on?</b></h2>
- </div>
-</div>
-<a href="https://github.com/piflyer/SmartDisplayPi">
-<div class="demo-card-wide4 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>SmartDisplayPi</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-Turn your Raspberry Pi to a Smart Display with visual cards for weather, traffic, and your calendar. Plus, Home Assistant and Google Assistant are built in, making this the ultimate smart home device.
-  </div>
-</div>
-</a>
-<a href="https://project-intraweb.github.io/">
-<div class="demo-card-wide5 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>Project Intraweb</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-Project Intraweb provides software for schools, businesses, and communities to provide offline content, or a working Intraweb. All of this is powered by a Raspberry Pi.
-  </div>
-</div>
-</a>
-<div class="demo-card-wide6 mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><b>What are his goals?</b></h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-<ul>
-  <li>Become a better programmer</li>
-  <li>Learn a new language (code)</li>
-  <li>Make more repositories</li>
-  <li>Be a better photographer</li>
-  <li>Be a better sailor</li>
-  <li>Have more fun (as if he hadn't have enough fun during lunch)</li>
-  <li>Update this blog quaterly🤞</li>
-</ul>
-</div>
-</div>
-<div class="demo-card-wide90 mdl-card mdl-shadow--2dp">
-</div>
-</div>
   </body>
 </html>
