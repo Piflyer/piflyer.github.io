@@ -30,6 +30,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tim Nguyen</title>
     <meta name="google-site-verification" content="3oiaCn57oUwItbPL48en11_oHCnCFeQB7mQDeeJCV9Y" />
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer@0.10.0/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+    src="https://unpkg.com/@google/model-viewer@0.10.0/dist/model-viewer-legacy.js">
+</script>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+<!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+<!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
     <style>
   html, body {
     font-family: 'Roboto', sans-serif;
@@ -306,6 +322,19 @@
 <li>Blender</li>
 <li>AR</li>
 </ul>
+<pre> </pre>
+</div>
+<div style="display: flex; align-items: center;">
+<div class="divider"></div><h3>Some AR  </h3>
+</div>
+<div class="card">
+<h2>3D Objects</h2>
+<p>Here is an example of using Blender and AR. You can see more in Project Seawrd.</p>
+<model-viewer src="earth.glb"
+auto-rotate camera-controls ar autoplay ios-src="earth.usdz"
+style="width: 100%; height: calc(75vh - 165px);"
+        alt="A 3D model of the earth">
+</model-viewer>
 <pre> </pre>
 </div>
 <div style="display: flex; align-items: center;">
